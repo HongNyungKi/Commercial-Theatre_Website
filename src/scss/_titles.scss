@@ -1,7 +1,40 @@
-%miniTitle{
+%miniTitle {
     font-family: 'Gochi Hand', cursive;
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+%movieInfo {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+%movieTitle {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+%movieLink {
+    border: 1px solid black;
+    width: 30%;
+    background-color: white;
+    padding: 13px 0;
+    color: black;
+    text-align: center;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s linear;
+
+    &:hover {
+        background-color: black;
+        color: white;
+    }
 }
