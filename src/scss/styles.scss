@@ -17,10 +17,12 @@ a {
 }
 
 body {
-    padding: 0 140px;
     padding-top: 70px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    // background: red;
+
+    &>*:not(.footer) {
+        padding: 0 140px;
+    }
 }
 
 header {
@@ -261,28 +263,62 @@ header {
 
 .comic-books {
     ul {
-        border: 1px solid red;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
 
         li {
-            border: 1px solid blue;
 
             img {
                 width: 100%;
                 height: 100%;
+                padding: 10px;
+                opacity: 0.8;
+                transition: all 0.3s linear;
 
                 &:hover {
-                    opacity: 0.5;
+                    opacity: 1;
                     cursor: pointer;
-                    // content: "963화";
+                    padding: 0;
                 }
-
-
             }
-
         }
 
+    }
+}
+
+//FOOTER
+.footer {
+    margin-top: 100px;
+    background-color: gray;
+    padding: 65px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &>div:nth-child(2) {
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+
+    .footer__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .column__title {
+            @extend %miniTitle;
+            margin-bottom: 50px;
+            opacity: 0.7;
+        }
+
+        ul {
+            text-align: center;
+
+            li {
+                @extend %movieInfo;
+                margin-bottom: 20px;
+            }
+        }
     }
 }
