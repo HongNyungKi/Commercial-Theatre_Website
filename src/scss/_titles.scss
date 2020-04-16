@@ -9,12 +9,14 @@
 %movieInfo {
     font-family: 'Kosugi Maru', sans-serif;
     font-size: 13px;
+    color: #333333;
     letter-spacing: 2px;
 }
 
 %movieTitle {
     font-family: 'Kosugi Maru', sans-serif;
     font-size: 32px;
+    color: #333333;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: bold;
@@ -25,7 +27,7 @@
     width: 30%;
     background-color: white;
     padding: 13px 0;
-    color: black;
+    color: #333333;
     text-align: center;
     font-family: 'Gochi Hand', cursive;
     font-size: 13px;
@@ -34,7 +36,7 @@
     transition: all 0.3s linear;
 
     &:hover {
-        background-color: black;
+        background-color: #333333;
         color: white;
     }
 }
@@ -44,7 +46,7 @@
     width: 15%;
     background-color: white;
     padding: 13px 0;
-    color: black;
+    color: #333333;
     text-align: center;
     font-family: 'Gochi Hand', cursive;
     font-size: 13px;
@@ -53,7 +55,7 @@
     transition: all 0.3s linear;
 
     &:hover {
-        background-color: black;
+        background-color: #333333;
         color: white;
     }
 }
